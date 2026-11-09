@@ -1,0 +1,26 @@
+{
+  "name": "@agm/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "dev:db": "tsx src/dev-db.ts",
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@agm/protocol": "workspace:*",
+    "@agm/rules": "workspace:*",
+    "@fastify/websocket": "^11.3.7",
+    "better-auth": "^1.7.18",
+    "fastify": "^5.12.8",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1",
+    "@types/ws": "^8.18.2",
+    "embedded-postgres": "18.6.0-beta.19",
+    "tsx": "^4.23.15"
+  }
+}
